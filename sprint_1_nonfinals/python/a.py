@@ -1,4 +1,4 @@
-def get_quadratic_function_value(a, x, b, c):
+def get_quadratic_function_value(a: int, x: int, b: int, c: int) -> int:
     # Здесь реализация вашего решения
     pass
 

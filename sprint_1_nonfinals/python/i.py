@@ -1,4 +1,4 @@
-def is_power_of_4(number):
+def is_power_of_4(number: int) -> bool:
     # Здесь реализация вашего решения
     pass
 

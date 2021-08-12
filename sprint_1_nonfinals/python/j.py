@@ -1,4 +1,6 @@
-def factorize(number):
+from typing import List
+
+def factorize(number: int) -> List[int]:
     # Здесь реализация вашего решения
     pass
 

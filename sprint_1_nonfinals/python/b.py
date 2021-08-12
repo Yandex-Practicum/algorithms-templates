@@ -1,4 +1,4 @@
-def is_same_parity(a, b, c):
+def is_same_parity(a: int, b: int, c: int) -> str:
     # Здесь реализация вашего решения
     pass
 
