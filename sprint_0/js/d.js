@@ -15,15 +15,15 @@ _reader.on('line', line => {
 
 process.stdin.on('end', solve);
 
-function twoSum(a, b) {
+function twoSum(array, targetSum) {
     // Ваше решение
 }
 
 function solve() {
     const n = readInt();
-    const a = readArray();
-    const k = readInt();
-    const ans = twoSum(a, k);
+    const array = readArray();
+    const targetSum = readInt();
+    const ans = twoSum(array, targetSum);
     if (ans.length === 0) {
         console.log("None")    
     } else {
@@ -43,3 +43,5 @@ function readArray() {
     _curLine++;
     return arr;
 }
+
+solve()

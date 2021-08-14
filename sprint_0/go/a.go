@@ -5,15 +5,15 @@ import (
 	"strconv"
 )
 
-func solve(a int, b int) int {
-	// Ваше решени
+func getSum(a int, b int) int {
+	// Ваше решение
 }
 
 func main() {
 
 	a := readInt()
 	b := readInt()
-	fmt.Println(solve(a, b))
+	fmt.Println(getSum(a, b))
 }
 
 func readInt() int {

@@ -3,16 +3,16 @@ import java.io.IOException;
 
 public class C {
 
-    private static double movingAverage(int n, ArrayList<Integer> arr, int k) {
+    private static double movingAverage(int n, ArrayList<Integer> arr, int windowSize) {
         // ваше решение
     }
 
     public static void main(String[] args) {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             int n = readInt(reader);
-            List<Integer> a = readList(reader);
-            int k = readInt(reader);
-            System.out.println(movingAverage(n, a, k));
+            List<Integer> arr = readList(reader);
+            int windowSize = readInt(reader);
+            System.out.println(movingAverage(n, arr, windowSize));
         }
     }
 

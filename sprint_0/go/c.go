@@ -7,16 +7,16 @@ import (
 	"strings"
 )
 
-func movingAverage(a []int, k int) []float64 {
+func movingAverage(array []int, windowSize int) []float64 {
 	// Ваше решение
 }
 
 func main() {
 	scanner := makeScanner()
 	readInt(scanner)
-	a := readArray(scanner)
-	k := readInt(scanner)
-	printArray(movingAverage(a, k))
+	array := readArray(scanner)
+	windowSize := readInt(scanner)
+	printArray(movingAverage(array, windowSize))
 }
 
 func makeScanner() *bufio.Scanner {

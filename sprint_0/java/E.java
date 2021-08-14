@@ -1,18 +1,18 @@
 import java.util.List;
 
-public class E {
+public class D {
 
     // Если ответ существует, верните список из двух элементов
     // Если нет - то верните пустой список 
-    private static List<Integer> solveTwoSum(List<Integer> arr, int k) {
+    private static List<Integer> twoSum(List<Integer> arr, int targetSum) {
         // Ваше решение
     }
     public static void main(String[] args) {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             int n = readInt(reader);
-            List<Integer> a = readList(reader);
-            int k = readInt(reader);
-            List<Integer> result = solveTwoSum(a, k);
+            List<Integer> arr = readList(reader);
+            int targetSum = readInt(reader);
+            List<Integer> result = twoSum(arr, targetSum);
             if (result.isEmpty()) {
                 System.out.println("None");
             } else {

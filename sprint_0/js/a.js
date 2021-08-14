@@ -23,7 +23,7 @@ function readNumber() {
     return Number(_inputLines[_curLine++]);
 }
 
-function solve(a, b) {
+function getSum(a, b) {
     // Ваше решение
 }
 
@@ -31,5 +31,7 @@ function solve() {
     const a = readNumber();
     const b = readNumber();
 
-    console.log(solve(a, b));
+    console.log(getSum(a, b));
 }
+
+solve()

@@ -15,15 +15,15 @@ _reader.on('line', line => {
 
 process.stdin.on('end', solve);
 
-function movingAverage(a, k) {
+function movingAverage(array, windowSize) {
     // Ваше решение
 }
 
 function solve() {
     const n = readInt();
-    const a = readArray();
-    const k = readInt();
-    process.stdout.write(`${movingAverage(a, k).join(' ')}`);
+    const arr = readArray();
+    const windoSize = readInt();
+    process.stdout.write(`${movingAverage(arr, windoSize).join(' ')}`);
 }
 
 function readInt() {
@@ -37,3 +37,5 @@ function readArray() {
     _curLine++;
     return arr;
 }
+
+solve()

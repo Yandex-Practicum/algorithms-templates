@@ -8,16 +8,18 @@ import (
 	"strings"
 )
 
-func twoSum(a []int, k int) []int {
+// Если ответ существует, верните список из двух элементов
+// Если нет - то верните пустой список
+func twoSum(array []int, targetSum int) []int {
 	// Ваше решение
 }
 
 func main() {
 	scanner := makeScanner()
 	readInt(scanner)
-	a := readArray(scanner)
-	k := readInt(scanner)
-	result := twoSum(a, k)
+	array := readArray(scanner)
+	targetSum := readInt(scanner)
+	result := twoSum(array, targetSum)
 	if len(result) == 0 {
 		fmt.Println("None")
 	} else {
