@@ -1,5 +1,3 @@
-// JavaScript
-
 const _readline = require('readline');
 
 const _reader = _readline.createInterface({
@@ -15,6 +13,8 @@ _reader.on('line', line => {
 
 process.stdin.on('end', solve);
 
+// Если ответ существует, верните список из двух элементов
+// Если нет - то верните пустой список 
 function twoSum(array, targetSum) {
     // Ваше решение
 }
