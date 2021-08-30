@@ -13,16 +13,26 @@ _reader.on('line', line => {
 
 process.stdin.on('end', solve);
 
-function movingAverage(array, windowSize) {
+function isPalindrome(line) {
     // Ваше решение
 }
 
 function solve() {
-    const n = readInt();
-    const arr = readArray();
-    const windoSize = readInt();
-    process.stdout.write(`${movingAverage(arr, windoSize).join(' ')}`);
+    const line = readLine();
+    if (isPalindrome(line)) {
+        console.log("True")
+    } else {
+        console.log("False")
+    }
 }
+
+
+function readLine() {
+    const line = _inputLines[_curLine];
+    _curLine++;
+    return line;
+}
+
 
 function readInt() {
     const n = Number(_inputLines[_curLine]);

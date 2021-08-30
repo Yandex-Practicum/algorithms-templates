@@ -13,15 +13,13 @@ _reader.on('line', line => {
 
 process.stdin.on('end', solve);
 
-function movingAverage(array, windowSize) {
+function getBinaryNumber(number) {
     // Ваше решение
 }
 
 function solve() {
     const n = readInt();
-    const arr = readArray();
-    const windoSize = readInt();
-    process.stdout.write(`${movingAverage(arr, windoSize).join(' ')}`);
+    process.stdout.write(`${getBinaryNumber(n)}`);
 }
 
 function readInt() {
@@ -29,6 +27,13 @@ function readInt() {
     _curLine++;
     return n;
 }
+
+function readLine() {
+    const line = _inputLines[_curLine];
+    _curLine++;
+    return line;
+}
+
 
 function readArray() {
     var arr = _inputLines[_curLine].trim(" ").split(" ").map(num => Number(num));

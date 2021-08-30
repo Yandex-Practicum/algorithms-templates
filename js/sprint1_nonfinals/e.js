@@ -13,21 +13,29 @@ _reader.on('line', line => {
 
 process.stdin.on('end', solve);
 
-function movingAverage(array, windowSize) {
+function getLongestWord(length, line) {
     // Ваше решение
 }
 
 function solve() {
-    const n = readInt();
-    const arr = readArray();
-    const windoSize = readInt();
-    process.stdout.write(`${movingAverage(arr, windoSize).join(' ')}`);
+    const length = readInt();
+    const line = readLine();
+    const longestWord = getLongestWord(length, line)
+    process.stdout.write(`${longestWord}`);
+    process.stdout.write("\n");
+    process.stdout.write(`${longestWord.length}`);
 }
 
 function readInt() {
     const n = Number(_inputLines[_curLine]);
     _curLine++;
     return n;
+}
+
+function readLine() {
+    const line = _inputLines[_curLine];
+    _curLine++;
+    return line;
 }
 
 function readArray() {

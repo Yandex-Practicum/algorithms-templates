@@ -13,15 +13,17 @@ _reader.on('line', line => {
 
 process.stdin.on('end', solve);
 
-function movingAverage(array, windowSize) {
+function isDegreeOfFour(number) {
     // Ваше решение
 }
 
 function solve() {
-    const n = readInt();
-    const arr = readArray();
-    const windoSize = readInt();
-    process.stdout.write(`${movingAverage(arr, windoSize).join(' ')}`);
+    const number = readInt();
+    if (isDegreeOfFour(number)) {
+        console.log("True");
+    } else {
+        console.log("False");
+    }
 }
 
 function readInt() {

@@ -13,7 +13,6 @@ _reader.on('line', line => {
     _inputLines.push(line);
 });
 
-// Когда ввод закончится, будет вызвана функция solve.
 process.stdin.on('end', solve);
 
 
@@ -23,8 +22,9 @@ function readNumber() {
     return Number(_inputLines[_curLine++]);
 }
 
-function getSum(a, b) {
+function evaluateFunction(a, b, c, x) {
     // Ваше решение
+    return a * x * x + b * x + c;
 }
 
 function solve() {
@@ -33,5 +33,3 @@ function solve() {
 
     console.log(getSum(a, b));
 }
-
-solve()
