@@ -1,13 +1,13 @@
 from typing import Tuple
 
-def add_two_numbers(A: str, B: str) -> str:
+def get_sum(first_number: str, second_number: str) -> str:
     # Здесь реализация вашего решения
     pass
 
 def read_input() -> Tuple[str, str]:
-    A = input().strip()
-    B = input().strip()
-    return A, B
+    first_number = input().strip()
+    second_number = input().strip()
+    return first_number, second_number
 
-A, B = read_input()
-print(add_two_numbers(A, B))
+first_number, second_number = read_input()
+print(get_sum(first_number, second_number))

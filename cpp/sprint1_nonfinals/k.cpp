@@ -3,7 +3,7 @@
 
 using namespace std;
 
-vector <int> solve(vector <int> x, int k) {
+vector <int> GetSum(vector <int> numberList, int k) {
 	// Здесь реализация вашего решения
 
 }
@@ -17,10 +17,10 @@ void print(const vector <int> &result) {
 int main() {
 	int n;
 	cin >> n;
-	vector <int> x(n);
+	vector <int> numberList(n);
 	for (int i = 0; i < n; ++i)
-		cin >> x[i];
+		cin >> numberList[i];
 	int k;
 	cin >> k;
-	print(solve(x, k));
+	print(GetSum(numberList, k));
 }

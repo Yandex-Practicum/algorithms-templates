@@ -3,7 +3,7 @@
 
 using namespace std;
 
-vector <int> solve(vector <int> A, vector <int> B) {
+vector <int> Zip(vector <int> a, vector <int> b) {
 	// Здесь реализация вашего решения
 
 }
@@ -17,10 +17,10 @@ void print(const vector <int> &result) {
 int main() {
 	int n;
 	cin >> n;
-	vector <int> A(n), B(n);
+	vector <int> a(n), b(n);
 	for (int i = 0; i < n; ++i)
-		cin >> A[i];
+		cin >> a[i];
 	for (int i = 0; i < n; ++i)
-		cin >> B[i];
-	print(solve(A, B));
+		cin >> b[i];
+	print(Zip(a, b));
 }

@@ -3,7 +3,7 @@
 
 using namespace std;
 
-bool solve(string input) {
+bool IsPalindrome(string line) {
 	// Здесь реализация вашего решения
 
 }
@@ -17,7 +17,7 @@ void print(bool result) {
 }
 
 int main() {
-	string input;
-	getline(cin, input);
-	print(solve(input));
+	string line;
+	getline(cin, line);
+	print(IsPalindrome(line));
 }

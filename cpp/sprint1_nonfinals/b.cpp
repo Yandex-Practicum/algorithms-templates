@@ -2,7 +2,7 @@
 
 using namespace std;
 
-string solve(int a, int b, int c) {
+string CheckParity(int a, int b, int c) {
 	// Здесь реализация вашего решения
 
 }
@@ -14,5 +14,5 @@ void print(string result) {
 int main() {
 	int a, b, c;
 	cin >> a >> b >> c;
-	print(solve(a, b, c));
+	print(CheckParity(a, b, c));
 }

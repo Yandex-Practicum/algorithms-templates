@@ -3,7 +3,7 @@
 
 using namespace std;
 
-vector <int> solve(int x) {
+vector <int> Factorize(int number) {
 	// Здесь реализация вашего решения
 
 }
@@ -15,7 +15,7 @@ void print(const vector <int> &result) {
 }
 
 int main() {
-	int x;
-	cin >> x;
-	print(solve(x));
+	int number;
+	cin >> number;
+	print(Factorize(number));
 }

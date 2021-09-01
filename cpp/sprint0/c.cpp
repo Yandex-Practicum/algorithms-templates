@@ -3,7 +3,7 @@
 
 using namespace std;
 
-vector <double> solve(vector <int> arr, int k) {
+vector <double> MovingAverage(vector <int> arr, int windowSize) {
 	// Здесь реализация вашего решения
 
 }
@@ -15,11 +15,11 @@ void print(const vector <double> &result) {
 }
 
 int main() {
-	int n, k;
+	int n, windowSize;
 	cin >> n;
 	vector <int> arr(n);
 	for (int i = 0; i < n; ++i)
 		cin >> arr[i];
-	cin >> k;
-	print(solve(arr, k));
+	cin >> windowSize;
+	print(MovingAverage(arr, windowSize));
 }

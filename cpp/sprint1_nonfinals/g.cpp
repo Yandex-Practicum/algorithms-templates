@@ -2,7 +2,7 @@
 
 using namespace std;
 
-string solve(int x) {
+string ToBinary(int number) {
 	// Здесь реализация вашего решения
 
 }
@@ -12,7 +12,7 @@ void print(string result) {
 }
 
 int main() {
-	int x;
-	cin >> x;
-	print(solve(x));
+	int number;
+	cin >> number;
+	print(ToBinary(number));
 }

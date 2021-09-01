@@ -1,13 +1,13 @@
 from typing import List
 
-def weather_randomness(weather_data: List[int]) -> int:
+def get_weather_randomness(temperatures: List[int]) -> int:
     # Здесь реализация вашего решения
     pass
 
 def read_input() -> List[int]:
     n = int(input())
-    weather_data = list(map(int, input().strip().split()))
-    return weather_data
+    temperatures = list(map(int, input().strip().split()))
+    return temperatures
 
-weather_data = read_input()
-print(weather_randomness(weather_data))
+temperatures = read_input()
+print(get_weather_randomness(temperatures))

@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int solve(vector <int> arr) {
+int GetWeatherRandomness(vector <int> temperatures) {
 	// Здесь реализация вашего решения
 
 }
@@ -15,8 +15,8 @@ void print(int result) {
 int main() {
 	int n;
 	cin >> n;
-	vector <int> arr(n);
+	vector <int> temperatures(n);
 	for (int i = 0; i < n; ++i)
-		cin >> arr[i];
-	print(solve(arr));
+		cin >> temperatures[i];
+	print(GetWeatherRandomness(temperatures));
 }
