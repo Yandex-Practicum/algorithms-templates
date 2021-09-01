@@ -7,14 +7,14 @@ import (
 	"strconv"
 )
 
-func isDegreeOfFour(number int) bool {
+func isPowerOfFour(number int) bool {
 	// Ваше решение
 }
 
 func main() {
 	scanner := makeScanner()
 	number := readInt(scanner)
-	if isDegreeOfFour(number) {
+	if isPowerOfFour(number) {
 		fmt.Println("True")
 	} else {
 		fmt.Println("False")

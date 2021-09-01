@@ -13,13 +13,13 @@ _reader.on('line', line => {
 
 process.stdin.on('end', solve);
 
-function isDegreeOfFour(number) {
+function isPowerOfFour(number) {
     // Ваше решение
 }
 
 function solve() {
     const number = readInt();
-    if (isDegreeOfFour(number)) {
+    if (isPowerOfFour(number)) {
         console.log("True");
     } else {
         console.log("False");

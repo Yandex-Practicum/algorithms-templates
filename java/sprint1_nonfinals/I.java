@@ -5,14 +5,14 @@ import java.io.InputStreamReader;
 
 public class I {
 
-    private static boolean isDegreeOfFour(int n) {
+    private static boolean isPowerOfFour(int n) {
         // Ваше решение
     }
 
     public static void main(String[] args) throws IOException {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             int n = readInt(reader);
-            if (isDegreeOfFour(n)) {
+            if (isPowerOfFour(n)) {
                 System.out.println("True");
             } else {
                 System.out.println("False");

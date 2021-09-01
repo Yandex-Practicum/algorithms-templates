@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class C {
 
-    private static List<Integer> getNeighbours(List<List<Integer>> matrix, int rowId, int colId) {
+    private static List<Integer> getNeighbours(List<List<Integer>> matrix, int row, int col) {
         // Ваше решение
     }
 

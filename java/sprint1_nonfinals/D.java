@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class D {
 
-    private static int getChaosNumber(List<Integer> temperatures) {
+    private static int getWeatherRandomness(List<Integer> temperatures) {
         // Ваше решение        
     }
 
@@ -17,7 +17,7 @@ public class D {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             int numberOfDays = readInt(reader);
             List<Integer> temperatures = readList(reader); 
-            int chaosNumber = getChaosNumber(temperatures);
+            int chaosNumber = getWeatherRandomness(temperatures);
             System.out.println(chaosNumber);
         }
     }

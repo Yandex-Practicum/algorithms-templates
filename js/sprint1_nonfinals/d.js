@@ -13,14 +13,14 @@ _reader.on('line', line => {
 
 process.stdin.on('end', solve);
 
-function chaosNumber(temperatures) {
+function getWeatherRandomness(temperatures) {
     // Ваше решение
 }
 
 function solve() {
     const n = readInt();
     const temperatures = readArray();
-    process.stdout.write(`${chaosNumber(temperatures)}`);
+    process.stdout.write(`${getWeatherRandomness(temperatures)}`);
 }
 
 function readInt() {

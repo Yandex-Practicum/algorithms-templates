@@ -13,7 +13,7 @@ _reader.on('line', line => {
 
 process.stdin.on('end', solve);
 
-function getNeighbours(matrix, rowCount, colCount, rowId, colId) {
+function getNeighbours(matrix, row, col) {
     // Ваше решение
 }
 
@@ -24,7 +24,7 @@ function solve() {
     const rowId = readInt();
     const colId = readInt();
     
-    process.stdout.write(`${getNeighbours(matrix, rows, cols, rowId, colId).join(' ')}`);
+    process.stdout.write(`${getNeighbours(matrix, rowId, colId).join(' ')}`);
 }
 
 function readInt() {

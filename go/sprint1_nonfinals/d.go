@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-func getChaosNumber(temperatures []int) int {
+func getWeatherRandomness(temperatures []int) int {
 	// Ваше решение
 }
 
@@ -16,7 +16,7 @@ func main() {
 	scanner := makeScanner()
 	readInt(scanner)
 	temperatures := readArray(scanner)
-	fmt.Println(getChaosNumber(temperatures))
+	fmt.Println(getWeatherRandomness(temperatures))
 }
 
 func makeScanner() *bufio.Scanner {

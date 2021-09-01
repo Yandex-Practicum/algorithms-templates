@@ -22,9 +22,8 @@ function readNumber() {
     return Number(_inputLines[_curLine++]);
 }
 
-function evaluateFunction(a, b, c, x) {
+function getSum(a, b) {
     // Ваше решение
-    return a * x * x + b * x + c;
 }
 
 function solve() {
