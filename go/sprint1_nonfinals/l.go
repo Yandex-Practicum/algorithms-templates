@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-func getOddCharacter(s1 string, t1 string) string {
+func getExcessiveLetter(s1 string, t1 string) string {
 	// Ваше решение
 }
 
@@ -16,7 +16,7 @@ func main() {
 	scanner := makeScanner()
 	s := readLine(scanner)
 	t := readLine(scanner)
-	fmt.Printf(getOddCharacter(s, t))
+	fmt.Printf(getExcessiveLetter(s, t))
 }
 
 func makeScanner() *bufio.Scanner {

@@ -13,14 +13,14 @@ _reader.on('line', line => {
 
 process.stdin.on('end', solve);
 
-function getOddCharacter(firstLine, secondLine) {
+function getExcessiveLetter(firstLine, secondLine) {
     // Ваше решение
 }
 
 function solve() {
     const firstLine = readLine();
     const secondLine = readLine();
-    process.stdout.write(`${getOddCharacter(firstLine, secondLine)}`);
+    process.stdout.write(`${getExcessiveLetter(firstLine, secondLine)}`);
 }
 
 function readInt() {

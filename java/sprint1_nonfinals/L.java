@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class L {
 
-    private static char getOddCharacter(String s, String t) {
+    private static char getExcessiveLetter(String s, String t) {
         // Ваше решение
     }
 
@@ -13,7 +13,7 @@ public class L {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             String s = reader.readLine();
             String t = reader.readLine();
-            System.out.println(getOddCharacter(s, t));
+            System.out.println(getExcessiveLetter(s, t));
 
         }
     }
