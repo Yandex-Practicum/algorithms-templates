@@ -13,15 +13,14 @@ _reader.on('line', line => {
 
 process.stdin.on('end', solve);
 
-function movingAverage(array, windowSize) {
+function getWeatherRandomness(temperatures) {
     // Ваше решение
 }
 
 function solve() {
     const n = readInt();
-    const arr = readArray();
-    const windoSize = readInt();
-    process.stdout.write(`${movingAverage(arr, windoSize).join(' ')}`);
+    const temperatures = readArray();
+    process.stdout.write(`${getWeatherRandomness(temperatures)}`);
 }
 
 function readInt() {

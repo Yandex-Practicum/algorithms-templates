@@ -13,15 +13,14 @@ _reader.on('line', line => {
 
 process.stdin.on('end', solve);
 
-function movingAverage(array, windowSize) {
+function getExcessiveLetter(firstLine, secondLine) {
     // Ваше решение
 }
 
 function solve() {
-    const n = readInt();
-    const arr = readArray();
-    const windoSize = readInt();
-    process.stdout.write(`${movingAverage(arr, windoSize).join(' ')}`);
+    const firstLine = readLine();
+    const secondLine = readLine();
+    process.stdout.write(`${getExcessiveLetter(firstLine, secondLine)}`);
 }
 
 function readInt() {
@@ -34,4 +33,10 @@ function readArray() {
     var arr = _inputLines[_curLine].trim(" ").split(" ").map(num => Number(num));
     _curLine++;
     return arr;
+}
+
+function readLine() {
+    const line = _inputLines[_curLine];
+    _curLine++;
+    return line;
 }

@@ -13,15 +13,18 @@ _reader.on('line', line => {
 
 process.stdin.on('end', solve);
 
-function movingAverage(array, windowSize) {
+function getNeighbours(matrix, row, col) {
     // Ваше решение
 }
 
 function solve() {
-    const n = readInt();
-    const arr = readArray();
-    const windoSize = readInt();
-    process.stdout.write(`${movingAverage(arr, windoSize).join(' ')}`);
+    const rows = readInt();
+    const cols = readInt();
+    const matrix = readMatrix(rows);
+    const rowId = readInt();
+    const colId = readInt();
+    
+    process.stdout.write(`${getNeighbours(matrix, rowId, colId).join(' ')}`);
 }
 
 function readInt() {
@@ -33,5 +36,13 @@ function readInt() {
 function readArray() {
     var arr = _inputLines[_curLine].trim(" ").split(" ").map(num => Number(num));
     _curLine++;
+    return arr;
+}
+
+function readMatrix(rowsCount) {
+    var arr = [];
+    for (let i = 0; i !== rowsCount; i++) {
+        arr.push(readArray())
+    }
     return arr;
 }

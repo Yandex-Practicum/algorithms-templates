@@ -43,5 +43,3 @@ function readArray() {
     _curLine++;
     return arr;
 }
-
-solve()

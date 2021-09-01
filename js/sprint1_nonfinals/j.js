@@ -13,15 +13,14 @@ _reader.on('line', line => {
 
 process.stdin.on('end', solve);
 
-function movingAverage(array, windowSize) {
+function factorize(number) {
     // Ваше решение
 }
 
 function solve() {
-    const n = readInt();
-    const arr = readArray();
-    const windoSize = readInt();
-    process.stdout.write(`${movingAverage(arr, windoSize).join(' ')}`);
+    const number = readInt();
+    const factorization = factorize(number)
+    process.stdout.write(`${factorization.join(' ')}`);
 }
 
 function readInt() {

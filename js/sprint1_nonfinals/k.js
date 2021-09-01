@@ -13,15 +13,16 @@ _reader.on('line', line => {
 
 process.stdin.on('end', solve);
 
-function movingAverage(array, windowSize) {
+function getSum(listNumber, number) {
     // Ваше решение
 }
 
 function solve() {
-    const n = readInt();
-    const arr = readArray();
-    const windoSize = readInt();
-    process.stdout.write(`${movingAverage(arr, windoSize).join(' ')}`);
+    const length = readInt();
+    const listNumber = readArray()
+    const number = readInt();
+
+    process.stdout.write(`${getSum(listNumber, number).join(' ')}`);
 }
 
 function readInt() {

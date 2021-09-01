@@ -13,15 +13,17 @@ _reader.on('line', line => {
 
 process.stdin.on('end', solve);
 
-function movingAverage(array, windowSize) {
+function evaluateFunction(x, a, b, c) {
     // Ваше решение
 }
 
 function solve() {
-    const n = readInt();
-    const arr = readArray();
-    const windoSize = readInt();
-    process.stdout.write(`${movingAverage(arr, windoSize).join(' ')}`);
+    const inputNumbers = readArray();
+    const a = inputNumbers[0]
+    const x = inputNumbers[1]
+    const b = inputNumbers[2]
+    const c = inputNumbers[3]
+    process.stdout.write(`${evaluateFunction(x, a, b, c)}`);
 }
 
 function readInt() {
