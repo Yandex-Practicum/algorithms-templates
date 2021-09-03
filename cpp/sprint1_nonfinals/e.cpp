@@ -3,7 +3,7 @@
 
 using namespace std;
 
-string solve(string input) {
+string GetLongestWord(string line) {
 	// Здесь реализация вашего решения
 
 }
@@ -15,8 +15,8 @@ void print(string result) {
 int main() {
 	int n;
 	cin >> n;
-	string s;
-	getline(cin, s);
-	getline(cin, s);
-	print(solve(s));
+	string line;
+	getline(cin, line);
+	getline(cin, line);
+	print(GetLongestWord(line));
 }

@@ -3,7 +3,7 @@
 
 using namespace std;
 
-char solve(string s, string t) {
+char GetExcessiveLetter(string shorter, string longer) {
 	// Здесь реализация вашего решения
 
 }
@@ -13,7 +13,7 @@ void print(char result) {
 }
 
 int main() {
-	string s, t;
-	cin >> s >> t;
-	print(solve(s, t));
+	string shorter, longer;
+	cin >> shorter >> longer;
+	print(GetExcessiveLetter(shorter, longer));
 }

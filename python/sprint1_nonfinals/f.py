@@ -1,4 +1,4 @@
-def is_palindrome(text: str) -> bool:
+def is_palindrome(line: str) -> bool:
     # Здесь реализация вашего решения
     pass
 

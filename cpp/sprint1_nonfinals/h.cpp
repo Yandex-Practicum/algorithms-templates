@@ -3,7 +3,7 @@
 
 using namespace std;
 
-string solve(string x, string y) {
+string GetSum(string firstNumber, string secondNumber) {
 	// Здесь реализация вашего решения
 
 }
@@ -13,7 +13,7 @@ void print(string result) {
 }
 
 int main() {
-	string x, y;
-	cin >> x >> y;
-	print(solve(x, y));
+	string firstNumber, secondNumber;
+	cin >> firstNumber >> secondNumber;
+	print(GetSum(firstNumber, secondNumber));
 }

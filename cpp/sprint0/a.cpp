@@ -2,13 +2,13 @@
 
 using namespace std;
 
-int solve(int A, int B) {
+int GetSum(int a, int b) {
 	// Здесь реализация вашего решения
 
 }
 
 int main() {
-	int A, B;
-	cin >> A >> B;
-	cout << solve(A, B);
+	int a, b;
+	cin >> a >> b;
+	cout << GetSum(a, b);
 }

@@ -3,7 +3,7 @@
 
 using namespace std;
 
-vector <int> solve(vector <vector <int> > matrix, int row, int col) {
+vector <int> GetNeighbours(vector <vector <int> > matrix, int row, int col) {
 	// Здесь реализация вашего решения
 
 }
@@ -23,5 +23,5 @@ int main() {
 			cin >> matrix[i][j];
 	int row, col;
 	cin >> row >> col;
-	print(solve(matrix, row, col));
+	print(GetNeighbours(matrix, row, col));
 }

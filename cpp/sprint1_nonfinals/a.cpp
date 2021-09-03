@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int solve(int a, int x, int b, int c) {
+int EvaluateFunction(int a, int b, int c, int x) {
 	// Здесь реализация вашего решения
 
 }
@@ -14,5 +14,5 @@ void print(int result) {
 int main() {
 	int a, x, b, c;
 	cin >> a >> x >> b >> c;
-	print(solve(a, x, b, c));
+	print(EvaluateFunction(a, b, c, x));
 }

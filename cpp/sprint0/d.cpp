@@ -5,7 +5,7 @@ using namespace std;
 
 // Если ответ существует, верните вектор из двух элементов
 // Если нет - то верните пустой вектор
-vector <int> solve(vector <int> arr, int k) {
+vector <int> TwoSum(vector <int> arr, int targetSum) {
 	// Здесь реализация вашего решения
 
 }
@@ -18,11 +18,11 @@ void print(const vector <int> &result) {
 }
 
 int main() {
-	int n, k;
+	int n, targetSum;
 	cin >> n;
 	vector <int> arr(n);
 	for (int i = 0; i < n; ++i)
 		cin >> arr[i];
-	cin >> k;
-	print(solve(arr, k));
+	cin >> targetSum;
+	print(TwoSum(arr, targetSum));
 }
