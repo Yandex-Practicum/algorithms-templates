@@ -7,7 +7,7 @@ string ToBinary(int number) {
 
 }
 
-void print(string result) {
+void print(const string &result) {
 	cout << result << endl;
 }
 

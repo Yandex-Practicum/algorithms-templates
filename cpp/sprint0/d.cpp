@@ -5,7 +5,7 @@ using namespace std;
 
 // Если ответ существует, верните вектор из двух элементов
 // Если нет - то верните пустой вектор
-vector <int> TwoSum(vector <int> arr, int targetSum) {
+vector <int> TwoSum(const vector <int> &arr, int targetSum) {
 	// Здесь реализация вашего решения
 
 }

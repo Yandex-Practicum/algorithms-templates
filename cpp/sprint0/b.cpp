@@ -3,7 +3,7 @@
 
 using namespace std;
 
-vector <int> Zip(vector <int> a, vector <int> b) {
+vector <int> Zip(const vector <int> &a, const vector <int> &b) {
 	// Здесь реализация вашего решения
 
 }

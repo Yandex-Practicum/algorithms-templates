@@ -3,7 +3,7 @@
 
 using namespace std;
 
-vector <int> GetSum(vector <int> numberList, int k) {
+vector <int> GetSum(const vector <int> &numberList, int k) {
 	// Здесь реализация вашего решения
 
 }

@@ -5,7 +5,7 @@ using namespace std;
 
 // Если ответ существует, верните вектор из двух элементов
 // Если нет - то верните пустой вектор
-vector <int> TwoSum(vector <int> arr, int targetSum) {
+vector <int> TwoSum(const vector <int> &sortedArr, int targetSum) {
 	// Здесь реализация вашего решения
 
 }
@@ -20,9 +20,9 @@ void print(const vector <int> &result) {
 int main() {
 	int n, targetSum;
 	cin >> n;
-	vector <int> arr(n);
+	vector <int> sortedArr(n);
 	for (int i = 0; i < n; ++i)
-		cin >> arr[i];
+		cin >> sortedArr[i];
 	cin >> targetSum;
-	print(TwoSum(arr, targetSum));
+	print(TwoSum(sortedArr, targetSum));
 }
