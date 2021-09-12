@@ -41,7 +41,7 @@ func readArray(scanner *bufio.Scanner) []int {
 	listString := strings.Split(scanner.Text(), " ")
 	arr := make([]int, len(listString))
 	for i := 0; i < len(listString); i++ {
-		arr[i], _ = strconv.ParseInt(listString[i], 10, 64)
+		arr[i], _ = strconv.Atoi(listString[i])
 	}
 	return arr
 }

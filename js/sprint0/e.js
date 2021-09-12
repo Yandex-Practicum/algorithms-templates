@@ -29,7 +29,6 @@ function solve() {
     } else {
         process.stdout.write(`${ans.join(' ')}`);
     }
-    process.stdout.write(`${zip(a, b).join(' ')}`);
 }
 
 function readInt() {
