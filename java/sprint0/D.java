@@ -1,6 +1,7 @@
 import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -12,7 +13,7 @@ public class D {
     private static List<Integer> twoSum(List<Integer> arr, int targetSum) {
         // Ваше решение
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             int n = readInt(reader);
             List<Integer> arr = readList(reader);
