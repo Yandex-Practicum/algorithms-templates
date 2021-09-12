@@ -3,7 +3,7 @@
 
 using namespace std;
 
-vector <int> GetNeighbours(vector <vector <int> > matrix, int row, int col) {
+vector <int> GetNeighbours(const vector <vector <int> > &matrix, int row, int col) {
 	// Здесь реализация вашего решения
 
 }

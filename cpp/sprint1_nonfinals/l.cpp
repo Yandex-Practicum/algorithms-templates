@@ -3,7 +3,7 @@
 
 using namespace std;
 
-char GetExcessiveLetter(string shorter, string longer) {
+char GetExcessiveLetter(const string &shorter, const string &longer) {
 	// Здесь реализация вашего решения
 
 }

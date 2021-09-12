@@ -3,7 +3,7 @@
 
 using namespace std;
 
-bool IsPalindrome(string line) {
+bool IsPalindrome(const string &line) {
 	// Здесь реализация вашего решения
 
 }

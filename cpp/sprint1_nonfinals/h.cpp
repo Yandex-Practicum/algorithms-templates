@@ -3,12 +3,12 @@
 
 using namespace std;
 
-string GetSum(string firstNumber, string secondNumber) {
+string GetSum(const string &firstNumber, const string &secondNumber) {
 	// Здесь реализация вашего решения
 
 }
 
-void print(string result) {
+void print(const string &result) {
 	cout << result << endl;
 }
 

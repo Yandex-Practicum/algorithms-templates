@@ -3,12 +3,12 @@
 
 using namespace std;
 
-string GetLongestWord(string line) {
+string GetLongestWord(const string &line) {
 	// Здесь реализация вашего решения
 
 }
 
-void print(string result) {
+void print(const string &result) {
 	cout << result << endl << result.length() << endl;
 }
 

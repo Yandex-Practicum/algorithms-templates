@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int GetWeatherRandomness(vector <int> temperatures) {
+int GetWeatherRandomness(const vector <int> &temperatures) {
 	// Здесь реализация вашего решения
 
 }

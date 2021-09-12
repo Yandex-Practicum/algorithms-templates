@@ -3,7 +3,7 @@
 
 using namespace std;
 
-vector <double> MovingAverage(vector <int> arr, int windowSize) {
+vector <double> MovingAverage(const vector <int> &arr, int windowSize) {
 	// Здесь реализация вашего решения
 
 }
