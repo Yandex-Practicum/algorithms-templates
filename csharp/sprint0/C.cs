@@ -8,7 +8,7 @@ public class C
     private static TextReader reader;
     private static TextWriter writer;
 
-    public static List<double> MovingAverage(List<int> a, int windowSize)
+    public static List<double> MovingAverage(List<int> array, int windowSize)
     {
         // Здесь реализация вашего решения
     }
@@ -24,9 +24,9 @@ public class C
         writer = new StreamWriter(Console.OpenStandardOutput());
 
         var n = ReadInt();
-
         var array = ReadList();
         var windowSize = ReadInt();
+
         writer.WriteLine(string.Join(" ", MovingAverage(array, windowSize)));
 
         reader.Close();

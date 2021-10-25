@@ -6,7 +6,7 @@ public class L
     private static TextReader reader;
     private static TextWriter writer;
 
-    private static char GetExcessiveLetter(string s, string t)
+    private static char GetExcessiveLetter(string shorter, string longer)
     {
         // Ваше решение
     }
@@ -16,9 +16,9 @@ public class L
         reader = new StreamReader(Console.OpenStandardInput());
         writer = new StreamWriter(Console.OpenStandardOutput());
 
-        var s = reader.ReadLine();
-        var t = reader.ReadLine();
-        writer.WriteLine(GetExcessiveLetter(s, t));
+        var shorter = reader.ReadLine();
+        var longer = reader.ReadLine();
+        writer.WriteLine(GetExcessiveLetter(shorter, longer));
 
         reader.Close();
         writer.Close();
