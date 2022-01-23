@@ -20,8 +20,8 @@ function movingAverage(array, windowSize) {
 function solve() {
     const n = readInt();
     const arr = readArray();
-    const windoSize = readInt();
-    process.stdout.write(`${movingAverage(arr, windoSize).join(' ')}`);
+    const windowSize = readInt();
+    process.stdout.write(`${movingAverage(arr, windowSize).join(' ')}`);
 }
 
 function readInt() {
