@@ -24,7 +24,7 @@ public class E
         var sortedArray = ReadList();
         var targetSum = ReadInt();
         var result = TwoSum(sortedArray, targetSum);
-        writer.WriteLine(result.Any() ? "None" : string.Join(" ", result));
+        writer.WriteLine(!result.Any() ? "None" : string.Join(" ", result));
 
         reader.Close();
         writer.Close();
