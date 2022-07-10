@@ -1,21 +1,34 @@
-/** Comment it before submitting 
+// ! Remove define before submitting !
+// #define local
+
+#ifdef local
 struct Node {  
   Node* left;  
   Node* right;
   int value;
   int size;
 };
-**/
+#endif
 
+#ifndef local
 #include "solution.h"
+#endif
 #include <cassert>
 #include <utility>
+
+int getSize(Node* node) {
+  if (node == nullptr) {
+    return 0;
+  }
+  return node->size;
+}
 
 std::pair<Node*, Node*> split(Node* root, int k) {
     // Your code
     // “ヽ(´▽｀)ノ”
 }
 
+#ifdef local
 void test() {
     Node node1({nullptr, nullptr, 3, 1});
     Node node2({nullptr, &node1, 2, 2});
@@ -27,3 +40,9 @@ void test() {
     assert(res.first->size == 4);
     assert(res.second->size == 2);
 }
+
+
+int main() {
+  test();
+}
+#endif

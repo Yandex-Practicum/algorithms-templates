@@ -1,15 +1,21 @@
-/** Comment it before submitting
+// ! Remove define before submitting !
+#define local
+
+#ifdef local
 struct Node {  
   int value;  
   const Node* left = nullptr;  
-  const Node* right = nullptr;  
-};
-**/
+  const Node* right = nullptr;
+  Node(int value, Node* left, Node* right) : value(value), left(left), right(right) {}
+};  
+#endif
 
-
+#ifndef local
 #include "solution_tree.h"
-#include <cassert>
+#endif
+#include <cmath>
 #include <iostream>
+#include <cassert>
 
 using namespace std;
 
@@ -19,6 +25,7 @@ int Solution(const Node* root) {
     // “ヽ(´▽｀)ノ”
 }
 
+#ifdef local
 void test() {
     Node node1({5, nullptr, nullptr});
     Node node2({1, nullptr, nullptr});
@@ -27,3 +34,8 @@ void test() {
     Node node5({2, &node4, &node3});
     assert(Solution(&node5) == 6);
 }
+
+int main() {
+  test();
+}
+#endif
