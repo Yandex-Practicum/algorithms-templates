@@ -1,13 +1,17 @@
-# Comment it before submitting
+# ! change LOCAL to False before submitting !
+# set LOCAL to True for local testing
+
+LOCAL = True
+
 from typing import Tuple
 
-
-class Node:  
-    def __init__(self, left=None, right=None, value=0, size=0):  
-        self.right = right
-        self.left = left
-        self.value = value
-        self.size = size
+if LOCAL:
+    class Node:  
+        def __init__(self, left=None, right=None, value=0, size=0):  
+            self.right = right
+            self.left = left
+            self.value = value
+            self.size = size
 
 
 def split(root, k) -> Tuple[Node, Node]:
@@ -25,3 +29,6 @@ def test():
     left, right = split(node6, 4)
     assert(left.size == 4)
     assert(right.size == 2)
+
+if __name__ == '__main__':
+    test()

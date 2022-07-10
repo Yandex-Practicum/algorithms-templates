@@ -1,9 +1,13 @@
-# Comment it before submitting
-# class Node:  
-#     def __init__(self, left=None, right=None, value=0):  
-#         self.right = right
-#         self.left = left
-#         self.value = value
+# ! change LOCAL to False before submitting !
+# set LOCAL to True for local testing
+
+LOCAL = True
+if LOCAL:
+    class Node:  
+        def __init__(self, left=None, right=None, value=0):  
+            self.right = right
+            self.left = left
+            self.value = value
 
 def remove(root, key):
     #  Your code
@@ -22,3 +26,6 @@ def test():
     assert newHead.value == 5
     assert newHead.right is node5
     assert newHead.right.value == 8
+
+if __name__ == '__main__':
+    test()

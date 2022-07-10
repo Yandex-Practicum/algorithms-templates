@@ -18,3 +18,6 @@ def test():
 	merge_sort(c, 0 , 6)
 	expected = [1, 1, 2, 2, 4, 10]
 	assert c == expected
+
+if __name__ == '__main__':
+    test()

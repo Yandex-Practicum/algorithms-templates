@@ -1,17 +1,24 @@
-from node import Node
+# ! change LOCAL to False before submitting !
+# set LOCAL to True for local testing
 
-# Comment it before submitting
-# class Node:  
-#     def __init__(self, left=None, right=None, value=0):  
-#         self.right = right
-#         self.left = left
-#         self.value = value
+LOCAL = True
+
+if not LOCAL:
+    from node import Node
+
+if LOCAL:
+    class Node:  
+        def __init__(self, left=None, right=None, value=0):  
+            self.right = right
+            self.left = left
+            self.value = value
 
 
 def insert(root, key):
     #  Your code
     #  “ヽ(´▽｀)ノ”
     pass
+
 
 def test():
     node1 = Node(None, None, 7)
@@ -20,3 +27,6 @@ def test():
     new_head = insert(node3, 6)
     assert new_head is node3
     assert new_head.left.value == 6
+
+if __name__ == '__main__':
+    test()

@@ -1,8 +1,13 @@
-# Comment it before submitting
-# class Node:  
-#     def __init__(self, value, next_item=None):  
-#         self.value = value  
-#         self.next_item = next_item
+# ! change LOCAL to False before submitting !
+# set LOCAL to True for local testing
+
+LOCAL = True
+
+if LOCAL:
+    class Node:  
+        def __init__(self, value, next_item=None):  
+            self.value = value  
+            self.next_item = next_item
 
 def solution(node, elem):
     # Your code
@@ -15,4 +20,7 @@ def test():
     node1 = Node("node1", node2)
     node0 = Node("node0", node1)
     idx = solution(node0, "node2")
-    # result is idx == 2
+    assert idx == 2
+
+if __name__ == '__main__':
+    test()

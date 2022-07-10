@@ -1,9 +1,14 @@
-# Comment it before submitting
-# class Node:  
-#     def __init__(self, value, left=None, right=None):  
-#         self.value = value  
-#         self.right = right  
-#         self.left = left
+# ! change LOCAL to False before submitting !
+# set LOCAL to True for local testing
+
+LOCAL = True
+
+if LOCAL:
+    class Node:  
+        def __init__(self, value, left=None, right=None):  
+            self.value = value  
+            self.right = right  
+            self.left = left
 
 
 def solution(root) -> bool:
@@ -22,3 +27,6 @@ def test():
     assert solution(node5)
     node2.value = 5
     assert not solution(node5)
+
+if __name__ == '__main__':
+    test()
