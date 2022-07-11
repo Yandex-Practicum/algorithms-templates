@@ -11,4 +11,4 @@ def read_input() -> Tuple[List[int], int]:
     return arr, window_size
 
 arr, window_size = read_input()
-print(" ".join(map(str, moving_average(arr, window_size))))
+print(*moving_average(arr, window_size))

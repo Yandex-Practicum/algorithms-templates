@@ -14,7 +14,7 @@ def print_result(result: Optional[Tuple[int, int]]) -> None:
     if result is None:
         print(None)
     else:
-        print(" ".join(map(str, result)))
+        print(*result)
 
 arr, target_sum = read_input()
 print_result(two_sum(arr, target_sum))
