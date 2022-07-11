@@ -1,5 +1,5 @@
 /*
-Comment if before submitting
+Comment it before submitting
 class Node<V> {  
     public V value;  
     public Node<V> next;  
