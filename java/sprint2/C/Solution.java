@@ -23,6 +23,10 @@ public class Solution {
         Node<String> node1 = new Node<>("node1", node2);
         Node<String> node0 = new Node<>("node0", node1);
         Node<String> newHead = solution(node0, 1);
+        assert newHead == node0;
+        assert newHead.next == node2;
+        assert newHead.next.next == node3;
+        assert newHead.next.next.next == null;
         // result is : node0 -> node2 -> node3
     }
 }

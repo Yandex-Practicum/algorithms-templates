@@ -23,6 +23,6 @@ public class Solution {
         Node<String> node1 = new Node<>("node1", node2);
         Node<String> node0 = new Node<>("node0", node1);
         int idx = solution(node0, "node2");
-        // result is : idx == 2
+        assert idx == 2;
     }
 }
