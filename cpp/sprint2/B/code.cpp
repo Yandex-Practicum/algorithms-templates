@@ -1,13 +1,22 @@
-#include "solution.h"
+// ! Remove define before submitting !
+#define local
 
-/*
-Comment it before submitting
+#ifndef local
+#include "solution.h"
+#endif
+
+
+#ifdef local
+
+#include <string>
+
 struct Node {  
     std::string value;  
     Node* next;  
     Node(const std::string &value, Node* next);  
 };
-*/
+
+#endif
 
 void solution(Node* head) {
     // Your code
