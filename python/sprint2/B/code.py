@@ -12,10 +12,7 @@ if LOCAL:
 def solution(node):
     # Your code
     # ヽ(´▽`)/
-    while node != None:
-        print(node.value)
-        node = node.next_item
-    # pass
+    pass
 
 def test():
     node3 = Node("node3", None)
