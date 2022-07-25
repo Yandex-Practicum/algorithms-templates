@@ -1,28 +1,32 @@
-// ! Remove define before submitting !
-#define local
-
-#ifndef local
+#ifdef REMOTE_JUDGE
 #include "solution.h"
 #endif
 
+#include <iostream>
 
-#ifdef local
+#ifndef REMOTE_JUDGE
 
 #include <string>
 
 struct Node {  
     std::string value;  
     Node* next;  
-    Node(const std::string &value, Node* next);  
+    Node(const std::string &value, Node* next) : value(value), next(next) {}
 };
 
 #endif
 
+
 void solution(Node* head) {
     // Your code
     // ヽ(´▽`)/
+    while (head) {
+        std::cout << head->value << std:: endl;
+        head = head->next;
+    }
 }
 
+#ifndef REMOTE_JUDGE
 void test() {
     Node node3("node3", nullptr);
     Node node2("node2", &node3);
@@ -37,3 +41,8 @@ void test() {
     node3
     */
 }
+
+int main() {
+    test();
+}
+#endif

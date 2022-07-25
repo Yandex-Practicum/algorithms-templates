@@ -1,17 +1,11 @@
-// ! Remove define before submitting !
-#define local
-
-#ifndef local
+#ifdef REMOTE_JUDGE
 #include "solution.h"
 #endif
 
-#ifdef local
+#ifndef REMOTE_JUDGE
 #include <cassert>
 #include <string>
-#endif
 
-
-#ifdef local
 struct Node {
     Node(const std::string &value, Node* next, Node* prev) 
         : value(value)
@@ -29,7 +23,7 @@ Node* solution(Node* head) {
     // ヽ(´▽`)/
 }
     
-#ifdef local
+#ifndef REMOTE_JUDGE
 void test() {
     Node node3("node3", nullptr, nullptr);
     Node node2("node2", nullptr, nullptr);
