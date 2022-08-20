@@ -20,10 +20,6 @@ struct Node {
 void solution(Node* head) {
     // Your code
     // ヽ(´▽`)/
-    while (head) {
-        std::cout << head->value << std:: endl;
-        head = head->next;
-    }
 }
 
 #ifndef REMOTE_JUDGE
