@@ -28,7 +28,7 @@ public class Solution<TValue>
         var node2 = new Node<string>("node2", node3);
         var node1 = new Node<string>("node1", node2);
         var node0 = new Node<string>("node0", node1);
-        Solve(node0);
+        Solution<string>.Solve(node0);
         /*
         Output is:
         node0

@@ -32,7 +32,7 @@ public class Solution
         var node2 = new Node<string>("node2", node3, null);
         var node1 = new Node<string>("node1", node2, null);
         var node0 = new Node<string>("node0", node1, null);
-        var newNode = Solve(node0);
+        var newNode = Solution<string>.Solve(node0);
         /*
         result is : newNode == node3
         node3.next == node2
