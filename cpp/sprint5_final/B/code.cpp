@@ -1,7 +1,4 @@
-// ! Remove define before submitting !
-#define local
-
-#ifdef local
+#ifndef REMOTE_JUDGE
 struct Node {  
   int value;  
   const Node* left = nullptr;  
@@ -9,7 +6,7 @@ struct Node {
   Node(Node* left, Node* right, int value) : value(value), left(left), right(right) {}
 };  
 #endif
-#ifndef local
+#ifdef REMOTE_JUDGE
 #include "solution.h"
 #endif
 #include <cassert>
@@ -19,7 +16,7 @@ Node* remove(Node* root, int key) {
     // “ヽ(´▽｀)ノ”
 }
 
-#ifdef local
+#ifndef REMOTE_JUDGE
 void test() {
     Node node1({nullptr, nullptr, 2});
     Node node2({&node1, nullptr, 3});

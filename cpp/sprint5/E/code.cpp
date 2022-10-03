@@ -1,7 +1,4 @@
-// ! Remove define before submitting !
-#define local
-
-#ifdef local
+#ifndef REMOTE_JUDGE
 struct Node {  
   int value;  
   const Node* left = nullptr;  
@@ -10,7 +7,7 @@ struct Node {
 };  
 #endif
 
-#ifndef local
+#ifdef REMOTE_JUDGE
 #include "solution_tree.h"
 #endif
 #include <cmath>
@@ -26,7 +23,7 @@ bool Solution(const Node* root) {
 } 
 
 
-#ifdef local
+#ifndef REMOTE_JUDGE
 void test() {
     {
       Node node1({1, nullptr, nullptr});

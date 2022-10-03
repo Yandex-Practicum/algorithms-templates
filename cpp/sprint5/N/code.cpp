@@ -1,7 +1,4 @@
-// ! Remove define before submitting !
-// #define local
-
-#ifdef local
+#ifndef REMOTE_JUDGE
 struct Node {  
   Node* left;  
   Node* right;
@@ -10,7 +7,7 @@ struct Node {
 };
 #endif
 
-#ifndef local
+#ifdef REMOTE_JUDGE
 #include "solution.h"
 #endif
 #include <cassert>
@@ -28,7 +25,7 @@ std::pair<Node*, Node*> split(Node* root, int k) {
     // “ヽ(´▽｀)ノ”
 }
 
-#ifdef local
+#ifndef REMOTE_JUDGE
 void test() {
     Node node1({nullptr, nullptr, 3, 1});
     Node node2({nullptr, &node1, 2, 2});

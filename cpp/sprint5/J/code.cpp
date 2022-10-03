@@ -1,7 +1,4 @@
-// ! Remove define before submitting !
-#define local
-
-#ifdef local
+#ifndef REMOTE_JUDGE
 struct Node {  
   int value;  
   const Node* left = nullptr;  
@@ -10,7 +7,7 @@ struct Node {
 };  
 #endif
 
-#ifndef local
+#ifdef REMOTE_JUDGE
 #include "solution.h"
 #endif
 #include <cmath>
@@ -25,7 +22,7 @@ Node* insert(Node* root, int key) {
     // “ヽ(´▽｀)ノ”
 }
 
-#ifdef local
+#ifndef REMOTE_JUDGE
 void test() {
     Node node1({nullptr, nullptr, 7});
     Node node2({&node1, nullptr, 8});
