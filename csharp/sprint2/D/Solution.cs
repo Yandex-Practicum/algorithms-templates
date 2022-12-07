@@ -29,7 +29,7 @@ public class Solution
         var node1 = new Node<string>("node1", node2);
         var node0 = new Node<string>("node0", node1);
         var idx = Solution<string>.Solve(node0, "node0");
-        // result is : idx == 2
+        // result is : idx == 0
     }
 }
 
