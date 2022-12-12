@@ -1,6 +1,8 @@
 # ! change LOCAL to False before submitting !
 # set LOCAL to True for local testing
 
+from typing import Optional
+
 LOCAL = True
 if LOCAL:
     class Node:  
@@ -9,7 +11,7 @@ if LOCAL:
             self.left = left
             self.value = value
 
-def remove(root, key):
+def remove(root, key) -> Optional[Node]:
     #  Your code
     #  “ヽ(´▽｀)ノ”
     pass
