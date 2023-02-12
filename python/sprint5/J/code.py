@@ -14,7 +14,7 @@ if LOCAL:
             self.value = value
 
 
-def insert(root, key):
+def insert(root, key) -> Node:
     #  Your code
     #  “ヽ(´▽｀)ノ”
     pass

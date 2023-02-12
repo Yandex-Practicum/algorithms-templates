@@ -11,7 +11,7 @@ if LOCAL:
             self.left = left
 
 
-def solution(root):
+def solution(root) -> int:
     #  Your code
     #  “ヽ(´▽｀)ノ”
     pass

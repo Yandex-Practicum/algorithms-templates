@@ -1,18 +1,24 @@
 # ! change LOCAL to False before submitting !
 # set LOCAL to True for local testing
 
+from typing import Optional
+
 LOCAL = True
 if LOCAL:
-    class Node:  
-        def __init__(self, left=None, right=None, value=0):  
+    class Node:
+        def __init__(self, left=None, right=None, value=0):
             self.right = right
             self.left = left
             self.value = value
+else:
+    from node import Node
 
-def remove(root, key):
+
+def remove(root, key) -> Optional[Node]:
     #  Your code
     #  “ヽ(´▽｀)ノ”
     pass
+
 
 def test():
     node1 = Node(None, None, 2)
@@ -26,6 +32,7 @@ def test():
     assert newHead.value == 5
     assert newHead.right is node5
     assert newHead.right.value == 8
+
 
 if __name__ == '__main__':
     test()

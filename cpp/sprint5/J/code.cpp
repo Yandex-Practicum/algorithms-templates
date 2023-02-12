@@ -1,8 +1,8 @@
 #ifndef REMOTE_JUDGE
 struct Node {  
   int value;  
-  const Node* left = nullptr;  
-  const Node* right = nullptr;
+  Node* left = nullptr;  
+  Node* right = nullptr;
   Node(Node* left, Node* right, int value) : value(value), left(left), right(right) {}
 };  
 #endif

@@ -1,4 +1,4 @@
-def sift_up(heap, idx):
+def sift_up(heap, idx) -> int:
     #  Your code
     #  “ヽ(´▽｀)ノ”
     pass
