@@ -1,15 +1,15 @@
-func getMovingAverage(_ a: Array<Int>, _ window: Int) -> Array<Double> {
+func getMovingAverage(_ a: [Int], _ window: Int) -> [Double] {
     // Your code
     // “ヽ(´▽｀)ノ”
 }
 
-func readInts() -> Array<Int> {
+func readInts() -> [Int] {
     return readLine()!.split(separator: " ").map { (x: Substring) -> Int in
         return Int(x)!
     }
 }
 
-func printArray<T>(_ a: Array<T>) {
+func printArray<T>(_ a: [T]) {
     for element in a {
         print(element, terminator: " ")
     }

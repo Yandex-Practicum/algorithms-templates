@@ -1,16 +1,16 @@
 
-func getTwoSum(_ a: Array<Int>, _ target: Int) -> (Int, Int)? {
+func getTwoSum(_ a: [Int], _ target: Int) -> (Int, Int)? {
     // Your code
     // “ヽ(´▽｀)ノ”
 }
 
-func readInts() -> Array<Int> {
+func readInts() -> [Int] {
     return readLine()!.split(separator: " ").map { (x: Substring) -> Int in
         return Int(x)!
     }
 }
 
-func printArray<T>(_ a: Array<T>) {
+func printArray<T>(_ a: [T]) {
     for element in a {
         print(element, terminator: " ")
     }
