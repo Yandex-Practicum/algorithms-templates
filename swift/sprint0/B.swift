@@ -9,7 +9,7 @@ func readInts() -> [Int] {
     }
 }
 
-func printArray(_ a: [Int]) {
+func printArray<T>(_ a: [T]) {
     for element in a {
         print(element, terminator: " ")
     }

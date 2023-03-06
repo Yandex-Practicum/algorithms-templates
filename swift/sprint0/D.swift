@@ -10,12 +10,6 @@ func readInts() -> [Int] {
     }
 }
 
-func printArray<T>(_ a: [T]) {
-    for element in a {
-        print(element, terminator: " ")
-    }
-}
-
 let size = Int(readLine()!)!
 let a = readInts()
 let target = Int(readLine()!)!
