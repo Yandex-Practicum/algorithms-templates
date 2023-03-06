@@ -1,10 +1,9 @@
 private fun getSum(a: Int, b: Int): Int {
-    TODO()
     // Your code
     // ヽ(´▽`)/
 }
 
-fun main(args: Array<String>) {
+fun main() {
     val a = readInt()
     val b = readInt()
     println(getSum(a, b))

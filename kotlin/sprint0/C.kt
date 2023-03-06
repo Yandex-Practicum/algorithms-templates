@@ -1,5 +1,4 @@
 private fun movingAverage(a: List<Int>, k: Int): List<Double> {
-    TODO()
     // Your code
     // ヽ(´▽`)/
 }

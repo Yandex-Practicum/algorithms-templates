@@ -1,5 +1,4 @@
 private fun zip(a: List<Int>, b: List<Int>): List<Int> {
-    TODO()
     // Your code
     // ヽ(´▽`)/
 }

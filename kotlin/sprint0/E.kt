@@ -1,5 +1,4 @@
 private fun getTwoSumFast(a: List<Int>, k: Int): Pair<Int, Int>? {
-    TODO()
     // Your code
     // ヽ(´▽`)/
 }
