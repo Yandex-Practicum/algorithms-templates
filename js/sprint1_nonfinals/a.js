@@ -33,7 +33,7 @@ function readInt() {
 }
 
 function readArray() {
-    var arr = _inputLines[_curLine].trim(" ").split(" ").map(num => Number(num));
+    const arr = _inputLines[_curLine].trim().split(" ").map(num => Number(num));
     _curLine++;
     return arr;
 }
