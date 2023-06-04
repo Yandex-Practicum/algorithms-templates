@@ -3,7 +3,7 @@ struct Node {
   int value;  
   Node* left = nullptr;  
   Node* right = nullptr;
-  Node(Node* left, Node* right, int value) : value(value), left(left), right(right) {}
+  Node(int value, Node* left, Node* right) : value(value), left(left), right(right) {}
 };  
 #endif
 
@@ -14,7 +14,7 @@ struct Node {
 #include <iostream>
 #include <cassert>
 
-using namespace std;
+
 
 
 Node* insert(Node* root, int key) {
