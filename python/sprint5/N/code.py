@@ -3,8 +3,6 @@
 
 LOCAL = True
 
-from typing import Tuple
-
 if LOCAL:
     class Node:  
         def __init__(self, left=None, right=None, value=0, size=0):  
@@ -14,7 +12,7 @@ if LOCAL:
             self.size = size
 
 
-def split(root, k) -> Tuple[Node, Node]:
+def split(root, k):
     #  Your code
     #  “ヽ(´▽｀)ノ”
     pass
