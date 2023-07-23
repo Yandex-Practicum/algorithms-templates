@@ -1,0 +1,35 @@
+/*
+ Comment it before submitting
+
+ open class Node {
+     
+     public var value: Int
+     public var left: Node?
+     public var right: Node?
+     
+     public init(_ value: Int) {
+         self.value = value
+         self.right = nil
+         self.left = nil
+     }
+ }
+ */
+
+func solution(node: Node?) -> Int {
+    // Your code
+    // ヽ(´▽`)/
+    return 0
+}
+
+func test() {
+    var node1 = Node(2)
+    var node2 = Node(1)
+    var node3 = Node(3)
+    node3.left = node1
+    node3.right = node2
+    var node4 = Node(2)
+    var node5 = Node(1)
+    node5.left = node4
+    node5.right = node3
+    assert(solution(node: node5) == 275)
+}
