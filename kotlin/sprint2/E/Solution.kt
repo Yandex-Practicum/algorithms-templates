@@ -1,17 +1,11 @@
 /**
  * Comment it before submitting
- *
- * class Node<V> {
- *     var value: V
- *     var next: Node<V>?
- *     var prev: Node<V>?
- *
- *     constructor(value: V) {
- *         this.value = value
- *         next = null
- *         prev = null
- *     }
- * }
+ * 
+ * class Node<V>(
+ *     var value: V,
+ *     var prev: Node<V>? = null,
+ *     var next: Node<V>? = null
+ * )
  */
 
 
