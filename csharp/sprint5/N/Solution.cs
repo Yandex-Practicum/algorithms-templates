@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 
-/*
-// закомментируйте перед отправкой
+#if REMOTE_JUDGE
+#else
 public class Node
 {
     public int Value { get; set; }
@@ -17,7 +17,8 @@ public class Node
         Right = null;
     }
 }
-*/
+#endif
+
 public class Solution
 {
     public static List<Node> Split(Node root, int k)

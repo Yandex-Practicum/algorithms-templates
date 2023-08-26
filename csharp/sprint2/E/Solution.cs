@@ -1,7 +1,5 @@
-/*
-
-// закомментируйте перед отправкой
-
+#if REMOTE_JUDGE
+#else
 public class Node<TValue>
 {
     public TValue Value { get; private set; }
@@ -15,8 +13,7 @@ public class Node<TValue>
         Prev = prev;
     }
 }
-
-*/
+#endif
 
 public class Solution
 {
