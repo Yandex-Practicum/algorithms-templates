@@ -1,4 +1,7 @@
+// <template>
 class Node(var left: Node?, var right: Node?, var value: Int)
+// <template>
+
 
 fun remove(root: Node?, key: Int): Node? {
     // Your code
