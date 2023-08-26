@@ -1,13 +1,12 @@
-/**
-Comment it before submitting 
-class Node { 
-    constructor(value, left = null, right = null) { 
-        this.value = value; 
-        this.left = left; 
-        this.right = right; 
-    } 
+if (process.env.REMOTE_JUDGE !== 'true') {
+    class Node {
+        constructor(value, left = null, right = null) {
+            this.value = value;
+            this.left = left;
+            this.right = right;
+        }
+    }
 }
-**/
 
 function printRange(root, left, right) {
     // Your code

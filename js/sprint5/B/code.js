@@ -1,13 +1,12 @@
-/**
-Comment it before submitting
-class CNode {  
-    constructor(value) {  
-        this.value = value;  
-        this.left = null;  
-        this.right = null;  
-    }  
+if (process.env.REMOTE_JUDGE !== 'true') {
+    class CNode {
+        constructor(value) {
+            this.value = value;
+            this.left = null;
+            this.right = null;
+        }
+    }
 }
-*/
 
 function solution(root) {
     // Your code

@@ -1,13 +1,12 @@
-/*
-Comment it before submitting
-class Node {  
-  constructor(value = null, next = null, prev = null) {  
-    this.value = value;  
-    this.next = next;  
-    this.prev = prev;  
-  }  
+if (process.env.REMOTE_JUDGE !== 'true') {
+    class Node {
+      constructor(value = null, next = null, prev = null) {
+        this.value = value;
+        this.next = next;
+        this.prev = prev;
+      }
+    }
 }
-*/
 
 function solution(node) {
     // Your code
