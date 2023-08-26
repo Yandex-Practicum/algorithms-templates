@@ -1,7 +1,4 @@
-
-/**
-Comment it before submitting
-
+#if !REMOTE_JUDGE
 open class Node {
    
    public var value: String
@@ -12,7 +9,7 @@ open class Node {
      self.next = nil
    }
  }
- **/
+#endif
 
 func solution(head: Node?) {
     // Your code
