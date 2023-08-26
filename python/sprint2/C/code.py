@@ -1,12 +1,11 @@
-# ! change LOCAL to False before submitting !
-# set LOCAL to True for local testing
+import os
 
-LOCAL = True
+LOCAL = os.environ.get('REMOTE_JUDGE', 'false') != 'true'
 
 if LOCAL:
-    class Node:  
-        def __init__(self, value, next_item=None):  
-            self.value = value  
+    class Node:
+        def __init__(self, value, next_item=None):
+            self.value = value
             self.next_item = next_item
 
 
@@ -14,6 +13,7 @@ def solution(node, idx):
     # Your code
     # ヽ(´▽`)/
     pass
+
 
 def test():
     node3 = Node("node3", None)
@@ -26,6 +26,7 @@ def test():
     assert new_head.next_item.next_item is node3
     assert new_head.next_item.next_item.next_item is None
     # result is node0 -> node2 -> node3
+
 
 if __name__ == '__main__':
     test()

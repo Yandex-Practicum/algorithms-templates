@@ -1,14 +1,13 @@
-# ! change LOCAL to False before submitting !
-# set LOCAL to True for local testing
+import os
 
-LOCAL = True
+LOCAL = os.environ.get('REMOTE_JUDGE', 'false') != 'true'
 
 if not LOCAL:
     from node import Node
 
 if LOCAL:
-    class Node:  
-        def __init__(self, left=None, right=None, value=0):  
+    class Node:
+        def __init__(self, left=None, right=None, value=0):
             self.right = right
             self.left = left
             self.value = value
@@ -27,6 +26,7 @@ def test():
     new_head = insert(node3, 6)
     assert new_head is node3
     assert new_head.left.value == 6
+
 
 if __name__ == '__main__':
     test()
