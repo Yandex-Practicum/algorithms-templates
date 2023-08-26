@@ -1,8 +1,6 @@
-/**
- * Comment it before submitting
- *
- * class Node(var left: Node?, var right: Node?, var value: Int, var size: Int)
- */
+// <template>
+class Node(var left: Node?, var right: Node?, var value: Int, var size: Int)
+// <template>
 
 fun split(root: Node?, k: Int): List<Node?> {
     // Your code

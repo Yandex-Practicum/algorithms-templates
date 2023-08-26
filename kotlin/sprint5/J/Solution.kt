@@ -1,8 +1,6 @@
-/**
- * Comment it before submitting
- *
- * class Node(var left: Node?, var right: Node?, var value: Int)
- */
+// <template>
+class Node(var left: Node?, var right: Node?, var value: Int)
+// <template>
 
 fun insert(root: Node, key: Int): Node {
     // Your code

@@ -1,11 +1,9 @@
-/**
- * Comment it before submitting
- *
- * class Node(var value: Int) {
- *     var left: Node? = null
- *     var right: Node? = null
- * }
- */
+// <template>
+class Node(var value: Int) {
+    var left: Node? = null
+    var right: Node? = null
+}
+// <template>
 
 fun treeSolution(head: Node?): Boolean {
     // Your code

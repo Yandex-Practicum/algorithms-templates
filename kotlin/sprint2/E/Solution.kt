@@ -1,18 +1,16 @@
-/**
- * Comment it before submitting
- *
- * class Node<V> {
- *     var value: V
- *     var next: Node<V>?
- *     var prev: Node<V>?
- *
- *     constructor(value: V) {
- *         this.value = value
- *         next = null
- *         prev = null
- *     }
- * }
- */
+// <template>
+class Node<V> {
+    var value: V
+    var next: Node<V>?
+    var prev: Node<V>?
+
+    constructor(value: V) {
+        this.value = value
+        next = null
+        prev = null
+    }
+}
+// <template>
 
 
 fun solution(head: Node<String>?): Node<String>? {

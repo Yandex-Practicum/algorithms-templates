@@ -1,8 +1,6 @@
-/**
- * Comment it before submitting
- *
- * class Node<V>(var value: V, var next: Node<V>?) {}
- */
+// <template>
+class Node<V>(var value: V, var next: Node<V>?) {}
+// <template>
 
 fun solution(head: Node<String>?) {
     // Your code
