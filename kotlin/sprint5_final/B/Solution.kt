@@ -1,8 +1,4 @@
-/**
- * Comment it before submitting
- *
- * class Node(var left: Node?, var right: Node?, var value: Int)
- */
+class Node(var left: Node?, var right: Node?, var value: Int)
 
 fun remove(root: Node?, key: Int): Node? {
     // Your code
