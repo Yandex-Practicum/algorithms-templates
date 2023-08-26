@@ -10,7 +10,7 @@ public class Solution {
     }
 
 
-    /** Comment it before submitting 
+    // <template>
     private static class Node {
     
         private Node left; 
@@ -57,7 +57,7 @@ public class Solution {
             this.size = size;
         }
     }
-    **/
+    // <template>
     
 
     public static void test() {
