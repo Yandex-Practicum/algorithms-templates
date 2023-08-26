@@ -1,13 +1,12 @@
 package main
 
-/**
-Comment it before submitting
+// <template>
 type Node struct {  
 	value  int  
 	left   *Node  
 	right  *Node  
 }
-**/
+// <template>
 
 func Solution(root1 *Node, root2 *Node) bool {
     // Your code
