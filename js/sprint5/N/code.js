@@ -1,14 +1,13 @@
-/**
-Comment it before submitting 
-class Node { 
-    constructor(value, left = null, right = null, size = 0) { 
-        this.value = value; 
-        this.left = left; 
-        this.right = right; 
-        this.size = size;
-    } 
+if (process.env.REMOTE_JUDGE !== 'true') {
+    class Node {
+        constructor(value, left = null, right = null, size = 0) {
+            this.value = value;
+            this.left = left;
+            this.right = right;
+            this.size = size;
+        }
+    }
 }
-**/
 
 function split(node, k) {
     // Your code

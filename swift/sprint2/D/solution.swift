@@ -1,15 +1,15 @@
-//   Comment it before submitting
+#if !REMOTE_JUDGE
+open class Node {
 
-//   open class Node {
-//
-//   public var value: String
-//   public var next: Node?
-//
-//   public init(_ value: String) {
-//     self.value = value
-//     self.next = nil
-//   }
-// }
+   public var value: String
+   public var next: Node?
+
+   public init(_ value: String) {
+     self.value = value
+     self.next = nil
+   }
+ }
+#endif
  
 func solution(head: Node?, elem: String) -> Int {
     // Your code

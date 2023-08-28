@@ -1,5 +1,4 @@
-/*
-Comment it before submitting
+// <template>
 class Node<V> {  
     public V value;  
     public Node<V> next;  
@@ -11,7 +10,7 @@ class Node<V> {
         this.prev = prev;  
     }  
 }
-*/
+// <template>
 
 public class Solution {
     public static Node<String> solution(Node<String> head) {

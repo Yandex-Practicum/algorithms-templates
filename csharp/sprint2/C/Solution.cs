@@ -1,6 +1,4 @@
-/*
-// закомментируйте перед отправкой
-
+#if !REMOTE_JUDGE
 public class Node<TValue>
 {
     public TValue Value { get; private set; }
@@ -12,7 +10,7 @@ public class Node<TValue>
         Next = next;
     }
 }
-*/
+#endif
 
 public class Solution<TValue>
 {
@@ -22,7 +20,8 @@ public class Solution<TValue>
         // ヽ(´▽`)/
     }
 
-    private static void Test()
+    #if !REMOTE_JUDGE
+    private static void Main()
     {
         var node3 = new Node<string>("node3", null);
         var node2 = new Node<string>("node2", node3);
@@ -31,4 +30,5 @@ public class Solution<TValue>
         var newHead = Solution<string>.Solve(node0, 1);
         // result is : node0 -> node2 -> node3
     }
+    #endif
 }

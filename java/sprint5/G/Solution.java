@@ -6,7 +6,7 @@ public class Solution {
         // “ヽ(´▽｀)ノ”
     }
 
-    /** Comment it before submitting
+    // <template>
     private static class Node {
         int value;  
         Node left;  
@@ -24,7 +24,7 @@ public class Solution {
             this.right = right;
         }
     }
-    **/
+    // <template>
     
     
     private static void test() {

@@ -1,7 +1,4 @@
-/*
-
-// закомментируйте перед отправкой
-
+#if !REMOTE_JUDGE
 public class Node<TValue>
 {
     public TValue Value { get; private set; }
@@ -15,8 +12,7 @@ public class Node<TValue>
         Prev = prev;
     }
 }
-
-*/
+#endif
 
 public class Solution
 {
@@ -26,7 +22,8 @@ public class Solution
         // ヽ(´▽`)/
     }
 
-    private static void Test()
+    #if !REMOTE_JUDGE
+    private static void Main()
     {
         var node3 = new Node<string>("node3", null, null);
         var node2 = new Node<string>("node2", node3, null);
@@ -43,4 +40,5 @@ public class Solution
         node0.prev == node1
         */
     }
+    #endif
 }

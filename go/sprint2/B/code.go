@@ -1,12 +1,11 @@
 package main
 
-/*
-Comment it before submitting
+// <template>
 type ListNode struct {  
     data   string  
     next *ListNode  
 }
-*/
+// <template>
 
 func Solution (head *ListNode) {
 	// Your code

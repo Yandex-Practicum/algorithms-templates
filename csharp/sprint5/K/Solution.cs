@@ -1,7 +1,6 @@
 using System.IO;
 
-/*
-// закомментируйте перед отправкой
+#if !REMOTE_JUDGE
 public class Node
 {
     public int Value { get; set; }
@@ -15,7 +14,8 @@ public class Node
         Right = null;
     }
 }
-*/
+#endif
+
 public class Solution
 {
     public static void PrintRange(Node root, int left, int right, StreamWriter writer)

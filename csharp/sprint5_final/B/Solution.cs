@@ -1,5 +1,4 @@
-/*
-// закомментируйте перед отправкой
+#if !REMOTE_JUDGE
 public class Node
 {
     public int Value { get; set; }
@@ -13,7 +12,7 @@ public class Node
         Right = null;
     }
 }
-*/
+#endif
 
 public class Solution
 {
@@ -23,7 +22,8 @@ public class Solution
         // “ヽ(´▽｀)ノ”
     }
 
-    public static void Test()
+    #if !REMOTE_JUDGE
+    public static void Main()
     {
         var node1 = new Node(2);
         var node2 = new Node(3)
@@ -59,4 +59,5 @@ public class Solution
         Console.WriteLine(newHead.Right == node5);
         Console.WriteLine(newHead.Right.Value == 8);
     }
+    #endif
 }

@@ -1,14 +1,13 @@
 package main
 
-/**
-Comment it before submitting
+// <template>
 type Node struct { 
 	value    int 
 	left   *Node 
 	right  *Node 
 	size     int
 }
-**/
+// <template>
 
 func split(node *Node, k int) (*Node, *Node) {
     // Your code

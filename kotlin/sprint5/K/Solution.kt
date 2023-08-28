@@ -2,11 +2,9 @@ import java.io.BufferedWriter
 import java.io.IOException
 import java.io.OutputStreamWriter
 
-/**
- * Comment it before submitting
- *
- * class Node(var left: Node?, var right: Node?, var value: Int)
- */
+// <template>
+class Node(var left: Node?, var right: Node?, var value: Int)
+// <template>
 
 @Throws(IOException::class)
 fun printRange(root: Node?, L: Int, R: Int, writer: BufferedWriter) {

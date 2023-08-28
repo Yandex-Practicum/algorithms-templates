@@ -1,11 +1,10 @@
-# ! change LOCAL to False before submitting !
-# set LOCAL to True for local testing
+import os
 
-LOCAL = True
+LOCAL = os.environ.get('REMOTE_JUDGE', 'false') != 'true'
 
 if LOCAL:
-    class Node:  
-        def __init__(self, left=None, right=None, value=0, size=0):  
+    class Node:
+        def __init__(self, left=None, right=None, value=0, size=0):
             self.right = right
             self.left = left
             self.value = value
@@ -17,6 +16,7 @@ def split(root, k):
     #  “ヽ(´▽｀)ノ”
     pass
 
+
 def test():
     node1 = Node(None, None, 3, 1)
     node2 = Node(None, node1, 2, 2)
@@ -25,8 +25,9 @@ def test():
     node5 = Node(node3, node4, 10, 3)
     node6 = Node(node2, node5, 5, 6)
     left, right = split(node6, 4)
-    assert(left.size == 4)
-    assert(right.size == 2)
+    assert (left.size == 4)
+    assert (right.size == 2)
+
 
 if __name__ == '__main__':
     test()

@@ -1,23 +1,22 @@
-/**
- * Comment it before submitting
- * class Node {
- *     var value: Int
- *     var left: Node?
- *     var right: Node?
- *
- *     constructor(value: Int) {
- *         this.value = value
- *         right = null
- *         left = null
- *     }
- *
- *     constructor(value: Int, left: Node?, right: Node?) {
- *         this.value = value
- *         this.left = left
- *         this.right = right
- *     }
- * }
-**/
+// <template>
+class Node {
+    var value: Int
+    var left: Node?
+    var right: Node?
+
+    constructor(value: Int) {
+        this.value = value
+        right = null
+        left = null
+    }
+
+    constructor(value: Int, left: Node?, right: Node?) {
+        this.value = value
+        this.left = left
+        this.right = right
+    }
+}
+// <template>
 
 fun treeSolution(head: Node?): Boolean {
     // Your code

@@ -1,6 +1,4 @@
-/*
- Comment it before submitting
-
+#if !REMOTE_JUDGE
 open class Node {
     
     public var value: Int
@@ -15,7 +13,8 @@ open class Node {
         self.size = 1
     }
 }
- */
+#endif
+
 func calcSize(node: Node?) -> Int {
     if node == nil {
         return 0
