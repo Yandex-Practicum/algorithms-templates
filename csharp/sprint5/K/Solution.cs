@@ -1,7 +1,6 @@
 using System.IO;
 
-#if REMOTE_JUDGE
-#else
+#if !REMOTE_JUDGE
 public class Node
 {
     public int Value { get; set; }

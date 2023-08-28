@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 
-#if REMOTE_JUDGE
-#else
+#if !REMOTE_JUDGE
 public class Node
 {
     public int Value { get; set; }
@@ -27,7 +26,8 @@ public class Solution
         // “ヽ(´▽｀)ノ”
     }
 
-    public static void Test()
+    #if !REMOTE_JUDGE
+    public static void Main()
     {
         var node1 = new Node(3, 1);
         var node2 = new Node(2, 2)
@@ -54,4 +54,5 @@ public class Solution
         Console.WriteLine(res[0].Size == 4);
         Console.WriteLine(res[1].Size == 2);
     }
+    #endif
 }

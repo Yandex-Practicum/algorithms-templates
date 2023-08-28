@@ -1,7 +1,6 @@
 using System;
 
-#if REMOTE_JUDGE
-#else
+#if !REMOTE_JUDGE
 public class Node
 {
     public int Value { get; set; }
@@ -25,7 +24,8 @@ public class Solution
         // “ヽ(´▽｀)ノ”
     }
 
-    private static void Test()
+    #if !REMOTE_JUDGE
+    private static void Main()
     {
         var node1 = new Node(1);
         var node2 = new Node(-5);
@@ -42,4 +42,5 @@ public class Solution
         };
         Console.WriteLine(Solve(node5));
     }
+    #endif
 }

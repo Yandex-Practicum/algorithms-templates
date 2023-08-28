@@ -1,5 +1,4 @@
-#if REMOTE_JUDGE
-#else
+#if !REMOTE_JUDGE
 public class Node<TValue>
 {
     public TValue Value { get; private set; }
@@ -21,7 +20,8 @@ public class Solution
         // ヽ(´▽`)/
     }
 
-    private static void Test()
+    #if !REMOTE_JUDGE
+    private static void Main()
     {
         var node3 = new Node<string>("node3", null);
         var node2 = new Node<string>("node2", node3);
@@ -30,5 +30,6 @@ public class Solution
         var idx = Solution.Solve(node0, "node2");
         // result is : idx == 2
     }
+    #endif
 }
 

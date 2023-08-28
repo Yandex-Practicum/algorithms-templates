@@ -15,6 +15,7 @@ public class Solution
         // “ヽ(´▽｀)ノ”
     }
 
+    #if !REMOTE_JUDGE
     public static void Main(string[] args)
     {
         var a = new List<int> { 1, 4, 9, 2, 10, 11 };
@@ -26,4 +27,5 @@ public class Solution
         var expectedMergeSortResult = new List<int> {1, 1, 2, 2, 4, 10};
         System.Console.WriteLine(c.SequenceEqual(expectedMergeSortResult));
     }
+    #endif
 }
