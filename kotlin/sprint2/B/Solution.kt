@@ -2,7 +2,7 @@
 class Node<V>(
     var value: V,
     var next: Node<V>? = null,
-) {}
+)
 // <template>
 
 fun solution(head: Node<String>?) {
