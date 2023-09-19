@@ -1,13 +1,10 @@
 // <template>
-class Node<V> {
-    var value: V
-    var next: Node<V>?
-    var prev: Node<V>?
+class Node<V>(var value: V) {
+    var next: Node<V>? = null
+    var prev: Node<V>? = null
 
-    constructor(value: V) {
-        this.value = value
-        next = null
-        prev = null
+    fun hasNext(): Boolean {
+        return next != null
     }
 }
 // <template>
