@@ -13,5 +13,5 @@ fun test() {
     val node3 = Node(null, node2, 7)
     val newHead = insert(node3, 6)
     assert(newHead == node3)
-    assert(newHead.left!!.value == 6)
+    assert(newHead?.left!!.value == 6)
 }

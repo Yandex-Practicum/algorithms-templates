@@ -18,6 +18,6 @@ fun test() {
     val node7 = Node(node3, node6, 5)
     val newHead = remove(node7, 10)
     assert(newHead!!.value == 5)
-    assert(newHead.right == node5)
-    assert(newHead.right!!.value == 8)
+    assert(newHead?.right == node5)
+    assert(newHead?.right!!.value == 8)
 }
