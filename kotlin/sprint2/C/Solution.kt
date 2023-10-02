@@ -14,8 +14,8 @@ fun test() {
     val node0 = Node("node0", node1)
     val newHead = solution(node0, 1)
     assert(newHead === node0)
-    assert(newHead.next === node2)
-    assert(newHead.next.next === node3)
-    assert(newHead.next.next.next == null)
+    assert(newHead?.next === node2)
+    assert(newHead?.next?.next === node3)
+    assert(newHead?.next?.next?.next == null)
     // result is : node0 -> node2 -> node3
 }
