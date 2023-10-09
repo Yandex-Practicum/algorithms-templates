@@ -22,5 +22,5 @@ function test() {
     var node5 = new CNode(2, node1, node2);
     var node6 = new CNode(2, node3, node4);
     var node7 = new CNode(1, node5, node6);
-    console.assert(solution(node5));
+    console.assert(solution(node7));
 }
