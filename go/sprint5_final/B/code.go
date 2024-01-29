@@ -1,6 +1,6 @@
 package main
 
-// <templatet>
+// <template>
 type Node struct {
 	value    int
 	left   *Node
