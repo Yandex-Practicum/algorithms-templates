@@ -7,7 +7,7 @@ func isPowerOfFour(_ number: Int) -> Bool {
 }
 
 func main() {
-    let line = readInt()
+    let number = readInt()
     print(isPowerOfFour(number) ? "True" : "False")
 }
 
