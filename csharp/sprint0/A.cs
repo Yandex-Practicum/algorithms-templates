@@ -25,11 +25,18 @@ public class A
         writer.Close();
     }
 
-    private static List<int> ReadList()
-    {
-        return reader.ReadLine()
-            .Split(new[] { ' ', '\t', }, StringSplitOptions.RemoveEmptyEntries)
-            .Select(int.Parse)
-            .ToList();
+    private static List<int> ReadList() {
+        var numbers = new List<int>();
+        string line;
+    
+        line = reader.ReadLine();
+        numbers.AddRange(line.Split(new[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse));
+    
+        line = reader.ReadLine();
+        if (!string.IsNullOrEmpty(line)) {
+            numbers.AddRange(line.Split(new[] { ' ', '\t' }, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse));
+        }
+    
+        return numbers;
     }
 }
