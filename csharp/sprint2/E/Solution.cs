@@ -29,6 +29,9 @@ public class Solution
         var node2 = new Node<string>("node2", node3, null);
         var node1 = new Node<string>("node1", node2, null);
         var node0 = new Node<string>("node0", node1, null);
+        node1.Prev = node0;
+        node2.Prev = node1;
+        node3.Prev = node2;
         var newNode = Solution.Solve(node0);
         /*
         result is : newNode == node3
