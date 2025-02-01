@@ -7,7 +7,8 @@ public class H {
     private static String sumOfBinaries(String a, String b) {
         // Ваше решение
     }
-    public static void main(String[] args) {
+
+    public static void main(String[] args) throws IOException {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             String a = reader.readLine();
             String b = reader.readLine();

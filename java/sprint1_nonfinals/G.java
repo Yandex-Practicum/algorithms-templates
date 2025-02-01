@@ -8,7 +8,8 @@ public class G {
     private static String getBinaryNumber(int n) {
         // Ваше решение
     }
-    public static void main(String[] args) {
+
+    public static void main(String[] args) throws IOException {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             int n = readInt(reader);
             System.out.println(getBinaryNumber(n));

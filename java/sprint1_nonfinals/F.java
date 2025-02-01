@@ -7,6 +7,7 @@ public class F {
     private static boolean isPalindrome(String text) {
         // Ваше решение
     }
+
     public static void main(String[] args) throws IOException{
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             String text = reader.readLine();

@@ -8,6 +8,7 @@ public class E {
     private static String getLongestWord(String text) {
         // Ваше решение
     }
+
     public static void main(String[] args) throws IOException {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             int textLength = readInt(reader);
