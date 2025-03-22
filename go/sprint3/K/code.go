@@ -13,7 +13,7 @@ func merge(arr []int, left int, mid int, right int) (result []int) {
 	// “ヽ(´▽｀)ノ”
 }
 
-func main() {
+func test() {
 	a := []int{1, 4, 9, 2, 10, 11}
 	b := merge(a, 0, 3, 6)
 	expected := []int{1, 2, 4, 9, 10, 11}
