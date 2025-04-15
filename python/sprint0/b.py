@@ -11,4 +11,4 @@ def read_input() -> Tuple[List[int], List[int]]:
     return a, b
 
 a, b = read_input()
-print(" ".join(map(str, zipper(a, b))))
+print(*zipper(a, b))
